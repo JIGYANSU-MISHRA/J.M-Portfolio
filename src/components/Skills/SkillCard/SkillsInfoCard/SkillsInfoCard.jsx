@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./SkillsInfoCard.css";
 
-const SkillsInfoCard = ({ heading, skills }) => {
+const SkillsInfoCard = ({ heading = "", skills = [] }) => {
   return (
     <div className="skills-info-card">
       <h6>{heading}</h6>
@@ -14,7 +14,6 @@ const SkillsInfoCard = ({ heading, skills }) => {
               <p className="percentage">{item.percentage}</p>
             </div>
             <div className="skill-progress-bg">
-              
               <div
                 className="skill-progress"
                 style={{ width: item.percentage }}
@@ -26,6 +25,7 @@ const SkillsInfoCard = ({ heading, skills }) => {
     </div>
   );
 };
+
 SkillsInfoCard.propTypes = {
   heading: PropTypes.string.isRequired,
   skills: PropTypes.arrayOf(
@@ -35,5 +35,5 @@ SkillsInfoCard.propTypes = {
     })
   ).isRequired,
 };
-SkillsInfoCard.defaultProps = { heading: "", skills: [] };
+
 export default SkillsInfoCard;
