@@ -19,7 +19,7 @@ const Data = [
         id: 3,
         category: "education",
         icon: "icon-graduation",
-        year: "2017 - 2019",
+        year: "2018 - 2019",
         title: "Secondary",
         desc: "Saraswati Sishu Vidya Mandir, Khurda, Odisha"
     },
