@@ -1,0 +1,65 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  color: #fff;
+  background-color: #060417;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  position: relative; /* To enable pseudo-elements positioning */
+}
+
+/* Apply background circles to the entire body */
+body::after, body::before {
+  content: " ";
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  background: #e6b918;
+  position: absolute;
+  z-index: -1;
+  filter: blur(200px);
+}
+
+/* Position the circles */
+body::after {
+  top: -3rem;
+  left: -5rem;
+}
+
+body::before {
+  background: #e8d697;
+  bottom: 0rem;
+  right: 0rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#HeroSection {
+  padding-top: 100px; 
+}
+#Skills {
+  padding-top: 100px; 
+}
+#Experience {
+  padding-top: 2px; 
+}
+#Projects {
+  padding-top: 80px; 
+}
+#ContactMe {
+  padding-top: 80px; 
+}

@@ -1,0 +1,47 @@
+.contact-container {
+    margin: 12rem 0 8rem 2rem;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.contact-container::after, .contact-container::before {
+    content: " ";
+    width: 28rem;
+    height: 15rem;
+    border-radius: 50%;
+    background: #e6b918;
+    position: absolute;
+    z-index: -1;
+    filter: blur(200px);
+}
+
+.contact-container::after {
+    top: -3rem;
+    left: -5rem;
+}
+
+.contact-container::before {
+    background: #e8d697;
+    bottom: 0rem;
+    right: 0rem;
+}
+
+.contact-container h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+} 
+
+@media(max-width:768px){
+    .contact-content{
+        flex-direction: column-reverse;
+
+    }
+    .contact-container h5{
+        font-size: 1.3rem;
+        margin-bottom: 0rem;
+    }
+}
