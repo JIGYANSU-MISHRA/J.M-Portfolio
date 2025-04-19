@@ -28,17 +28,10 @@ const Data = [
         category: "experience",
         icon: "icon-Briefcase",
         year: "Jun'24 - Present",
-        title: "Web Developer (Promist Solutions)",
-        desc: "Developed and designed multiple frontend website using modern web technologies and implementing a robust admin panel to streamline content management and improve site functionality. "
+        title: "Web Developer Intern (Promist Solutions)",
+        desc: "As a Web Developer Intern, I contributed to designing, developing, and maintaining responsive websites and web applications. My responsibilities included writing clean, scalable code using HTML, CSS, JavaScript, and frameworks like React.js. I collaborated with designers and backend developers to implement user interfaces, optimize performance, and ensure cross-browser compatibility. During the internship, I gained hands-on experience with version control systems (Git), API integration, and debugging tools, while improving my problem-solving and teamwork skills in a real-world development environment. "
     },
-    {
-        id: 5,
-        category: "experience",
-        icon: "icon-Briefcase",
-        year: "Apr'24 - May'24",
-        title: "Java Developer (CodSoft)",
-        desc: "Developed multiple projects using Java with strong problem-solving skills and proficiency in object-oriented programming and performance through efficient coding practices"
-    },
+    
 ];
 
 export default Data;

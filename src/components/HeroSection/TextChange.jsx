@@ -4,10 +4,10 @@ import "./TextChange.css";
 
 const TextChange = () => {
   const phrases = [
-    { text: "Software Engineer", color: "#e6b918" }, 
+    { text: "Software Engineer", color: "#e6b918" },
     { text: "Web Developer", color: "#e6b918" },
-    { text: "UI/UX Designer", color: "#e6b918" }, 
-    { text: "Photographer", color: "#e6b918" }, 
+    { text: "UI/UX Designer", color: "#e6b918" },
+    { text: "Photographer", color: "#e6b918" },
   ];
 
   const [currentPhrase, setCurrentPhrase] = useState(0);
@@ -15,12 +15,12 @@ const TextChange = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFadeIn(false); 
+      setFadeIn(false);
       setTimeout(() => {
         setCurrentPhrase((prevPhrase) => (prevPhrase + 1) % phrases.length);
-        setFadeIn(true); 
-      }, 500); 
-    }, 2500);
+        setFadeIn(true);
+      }, 500);
+    }, 3000); // Increased interval for better readability
 
     return () => clearInterval(interval);
   }, [phrases.length]);
@@ -36,4 +36,3 @@ const TextChange = () => {
 };
 
 export default TextChange;
-

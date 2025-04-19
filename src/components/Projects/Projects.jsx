@@ -6,7 +6,9 @@ import "./Projects.css";
 import notesMeImg from '../../assets/images/Notes-Me.png';
 import homeDealImg from '../../assets/images/HomeDeal.png';
 import visualiseImg from '../../assets/images/Visualise.png';
+import healthloopImg from '../../assets/images/Healthloop.png';
 import ticTacToeImg from '../../assets/images/Tic-Tac-Toe.png';
+import weatherImg from '../../assets/images/Weather.png';
 
 const Projects = () => {
     return (
@@ -28,12 +30,27 @@ const Projects = () => {
                     image={homeDealImg}
                 />
                 <ProjectCard
+                    title="Healthloop"
+                    main="Doctor Appointment Booking System. Book and manage appointments seamlessly with HealthLoop using Next.js, Tailwind CSS, and Context API"
+                    demoUrl="https://healthloop.vercel.app/"
+                    sourceCodeUrl="https://github.com/JIGYANSU-MISHRA/HealthLoop"
+                    image={healthloopImg}
+                />
+                <ProjectCard
+                    title="Weather-App"
+                    main="A responsive weather application that displays current conditions and 5-day forecasts for any city worldwide, with dark/light mode toggle"
+                    demoUrl="https://jigyansu-weather-app.vercel.app/"
+                    sourceCodeUrl="https://github.com/JIGYANSU-MISHRA/Weather-app"
+                    image={weatherImg}
+                />
+                <ProjectCard
                     title="VisuAlise"
                     main="AI-Powered Content Generation. Empowering creativity with AI. Transform text, images, and speech seamlessly using React.js"
                     demoUrl="https://visualise2ai.vercel.app/"
                     sourceCodeUrl="https://github.com/JIGYANSU-MISHRA/VisuAlise-AI-Powered-Content-Generation"
                     image={visualiseImg}
                 />
+                
                 <ProjectCard
                     title="Tic-Tac-Toe"
                     main="It is a clean, responsive design and dynamic gameplay with two-player functionality. Developed using HTML, CSS, and JavaScript"

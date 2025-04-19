@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <>
             <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
-            <nav className="nav-wrapper">
+            <nav className="nav-wrapper" data-aos="fade-down">
                 <div className="nav-content">
                     <h1 className="title">.. J.M Portfolio ..</h1>
                     <ul>
@@ -26,7 +26,7 @@ const Navbar = () => {
                             <a href="#Experience" className="menu-items">Experience</a>
                         </li>
                         <li>
-                            <a href="#Projects"className="menu-items">Projects</a>
+                            <a href="#Projects" className="menu-items">Projects</a>
                         </li>
                         <li>
                             <a href="#ContactMe" className="menu-items">Contact</a>

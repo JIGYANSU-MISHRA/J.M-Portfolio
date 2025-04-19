@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -7,18 +7,25 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Hero.css";
 import heroimg from "../../assets/images/Photo1.jpg"; 
 import TextChange from "./TextChange";
 
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div id="HeroSection" className="hero-container">
-      <div className="home-img">
+      <div className="home-img" data-aos="fade-right">
         <img src={heroimg} alt="Jigyansu Mishra" />
       </div>
-      <div className="text-section1">
-        <h3>Hi, My Name</h3> <h1>Jigyansu Mishra</h1>
+      <div className="text-section1" data-aos="fade-left">
+        <h3>Hi, My Name</h3> 
+        <h1>Jigyansu Mishra</h1>
         <h3>
           And I'm a <TextChange />
         </h3>

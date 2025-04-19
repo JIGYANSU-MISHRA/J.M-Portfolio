@@ -1,5 +1,5 @@
 .experience-container {
-    margin: 12rem 0 12rem 2rem;
+    margin: 7rem 0 12rem 2rem;
     position: relative;
     padding: 0 1rem;
 }
@@ -82,13 +82,13 @@
 .timeline_title {
     font-size: 1.25rem;
     font-weight: 700;
-    margin-top: 0.5rem;
     color: #333;
 }
 
 .timeline_text {
     font-size: 0.875rem;
     color: #555;
+    line-height: 20px;
 }
 
 .icon-graduation {
