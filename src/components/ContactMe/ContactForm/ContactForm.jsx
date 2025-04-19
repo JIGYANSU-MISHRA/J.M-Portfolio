@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import './ContactForm.css';
 
 const ContactForm = () => {
@@ -10,12 +10,11 @@ const ContactForm = () => {
                 <input type="text" name="lastname" placeholder="Enter Last Name" />
             </div>
             <input type="text" name="email" placeholder="Enter Email" />
-            <textarea type="text" name="message" placeholder="Message" row={3}></textarea>
+            <textarea type="text" name="message" placeholder="Message" rows={3}></textarea>
             <button>SEND</button>
-
         </form>
     </div>
   )
 }
 
-export default ContactForm
+export default ContactForm;

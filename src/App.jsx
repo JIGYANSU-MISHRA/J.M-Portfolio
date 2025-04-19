@@ -7,6 +7,7 @@ import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
 import ContactMe from './components/ContactMe/ContactMe';
 import Footer from './components/Footer/Footer'
+import Certification from './components/Certification/Certification';
 
 const App = () =>{
   return (
@@ -14,6 +15,7 @@ const App = () =>{
     <Navbar/>
     <div><HeroSection/>
     <Skills />
+    <Certification />
     <Experience/>
     <Projects/>
     <ContactMe/>

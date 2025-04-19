@@ -1,15 +1,24 @@
-import React from 'react';
+import 'react';
+import PropTypes from 'prop-types';
 import './ContactInfoCard.css';
 
-const ContactInfoCard = ({iconUrl, text}) => {
+const ContactInfoCard = ({ icon, text, link }) => {
   return (
-    <div className="contact-details-card">
-        <div className="icon-1">
-            <img src={iconUrl} alt="text" />
-        </div>
-        <p>{text}</p>
-    </div>
-  )
-}
+    <a href={link} target="_blank" rel="noopener noreferrer" className="contact-link">
+      <div className="contact-details-card">
+          <div className="icon-1">
+              {icon}
+          </div>
+          <p>{text}</p>
+      </div>
+    </a>
+  );
+};
 
-export default ContactInfoCard
+ContactInfoCard.propTypes = {
+  icon: PropTypes.element.isRequired,
+  text: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+};
+
+export default ContactInfoCard;

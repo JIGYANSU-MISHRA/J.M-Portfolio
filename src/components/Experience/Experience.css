@@ -9,7 +9,7 @@
     width: 28rem;
     height: 28rem;
     border-radius: 50%;
-    background: #e6b918;
+    background: #e6a818;
     position: absolute;
     z-index: -1;
     filter: blur(200px);
@@ -52,7 +52,13 @@
     width: 90%;
     margin: 0 auto;
 }
-
+.timeline_heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+}
 .timeline_item {
     position: relative;
     padding-left: 3.125rem;

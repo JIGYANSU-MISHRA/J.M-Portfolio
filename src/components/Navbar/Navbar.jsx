@@ -23,6 +23,9 @@ const Navbar = () => {
                             <a href="#Skills" className="menu-items">Skills</a>
                         </li>
                         <li>
+                            <a href="#Certifications" className="menu-items">Certifications</a>
+                        </li>
+                        <li>
                             <a href="#Experience" className="menu-items">Experience</a>
                         </li>
                         <li>
