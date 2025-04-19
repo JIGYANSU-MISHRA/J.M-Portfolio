@@ -4,7 +4,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center; /* Center align items vertically */
-  padding: 60px;
+  padding: 70px;
   flex-wrap: wrap;
 }
 
@@ -74,13 +74,8 @@
 
 .home-img img {
   width: 25vw;
-<<<<<<< HEAD
   margin: 0px 40px; 
   border-radius: 10%;
-=======
-  margin: 120px 80px 0px 80px;
-  border-radius: 20%;
->>>>>>> af470b7aef0ace24189a93bfe893a93678175c2a
   animation: floatImage 3s ease-in-out infinite;
   border: 3px solid black;
 }
