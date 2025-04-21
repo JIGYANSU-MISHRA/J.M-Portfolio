@@ -69,7 +69,7 @@ const HeroSection = () => {
           </a>
         </div>
         <a
-          href="https://drive.google.com/file/d/1Ef2-EhbWACBG_1rlsv81BBFpoNcjdt6H/view?usp=sharing"
+          href="https://drive.google.com/file/d/1N3GRswImmEcEm85HvTaP0LcL9jLQxYry/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
         >
