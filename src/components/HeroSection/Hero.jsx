@@ -30,13 +30,7 @@ const HeroSection = () => {
           And I'm a <TextChange />
         </h3>
         <p>
-          I am a passionate Software Developer with hands-on experience in
-          building dynamic and responsive web applications using modern
-          JavaScript frameworks like React. With a strong foundation in computer
-          science, I love transforming ideas into intuitive and engaging user
-          experiences. My goal is to continue growing as a developer, contribute
-          to impactful projects, and stay updated with the ever-evolving tech
-          landscape.
+          I am a passionate Software Developer with hands-on experience in building scalable web and mobile applications using modern technologies like React, Next.js, React Native, and TypeScript. With professional experience with different Freelancing project and company works, I have successfully delivered production-ready applications including AI-powered platforms, real-time networking solutions, and cross-platform mobile apps. I specialize in the MERN stack, cloud services, and database management, transforming complex ideas into intuitive and engaging user experiences. My goal is to continue contributing to impactful projects and stay at the forefront of the ever-evolving tech landscape.
         </p>
         <div className="social-icons">
           <a

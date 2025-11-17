@@ -27,25 +27,105 @@
     background: #e8d697;
 }
 
-.projects h1 {
+.projects h1,
+.projects-heading {
     text-align: center;
     font-size: 2.1rem;
     font-weight: bold;
-    margin: 0rem 2rem 5rem 1rem;
+    margin: 0rem 2rem 3rem 1rem;
+    color: #fff !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Projects Filter */
+.projects-filter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-button {
+    padding: 0.875rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid #e6b918;
+    color: #e6b918;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 140px;
+}
+
+.filter-button:hover {
+    background: rgba(230, 185, 24, 0.1);
+    transform: translateY(-2px);
+}
+
+.filter-button.active {
+    background: #e6b918;
+    color: #1a1a1a;
+    box-shadow: 0px 4px 12px rgba(230, 185, 24, 0.4);
 }
 
 .projects-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
-    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 100%;
 }
 
-.project-card .project-main{
-    color: rgb(66, 59, 59); 
-    margin-top: 1rem; 
-    margin-bottom: 1rem; 
-    font-size: 1rem; 
-    line-height: 1.2; 
-    font-weight: bold;
+/* Media Queries */
+@media (max-width: 768px) {
+    .projects h1,
+    .projects-heading {
+        font-size: 1.8rem;
+        margin: 0rem 1rem 2rem 1rem;
+        color: #fff !important;
+    }
+
+    .projects-filter {
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .filter-button {
+        font-size: 0.95rem;
+        padding: 0.7rem 1.25rem;
+        min-width: 120px;
+    }
+
+    .projects-container {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects h1,
+    .projects-heading {
+        font-size: 1.6rem;
+        margin: 0rem 0.5rem 1.5rem 0.5rem;
+        color: #fff !important;
+    }
+
+    .projects-filter {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+
+    .filter-button {
+        width: 100%;
+        min-width: unset;
+        font-size: 0.9rem;
+        padding: 0.65rem 1rem;
+    }
+
+    .projects-container {
+        gap: 1.5rem;
+    }
 }

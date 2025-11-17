@@ -5,9 +5,9 @@ import "./TextChange.css";
 const TextChange = () => {
   const phrases = [
     { text: "Software Engineer", color: "#e6b918" },
-    { text: "Web Developer", color: "#e6b918" },
-    { text: "UI/UX Designer", color: "#e6b918" },
-    { text: "Photographer", color: "#e6b918" },
+    { text: "Full Stack Web Developer", color: "#e6b918" },
+    { text: "Android Developer", color: "#e6b918" },
+    { text: "Freelancer", color: "#e6b918" },
   ];
 
   const [currentPhrase, setCurrentPhrase] = useState(0);

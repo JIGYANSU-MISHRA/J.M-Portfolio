@@ -32,152 +32,164 @@
     justify-content: center;
     font-size: 2.1rem;
     font-weight: 600;
-    margin-bottom: 5rem;
+    margin-bottom: clamp(1.5rem, 4vw, 3rem);
 }
 
-.experience_container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.875rem;
+/* Tabs Container */
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: clamp(0.5rem, 2vw, 1rem);
+    margin-bottom: clamp(1.5rem, 4vw, 3rem);
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    padding: 0.875rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid #e6b918;
+    color: #e6b918;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 180px;
+}
+
+.tab-button:hover {
+    background: rgba(230, 185, 24, 0.1);
+    transform: translateY(-2px);
+}
+
+.tab-button.active {
+    background: #e6b918;
+    color: #1a1a1a;
+    box-shadow: 0px 4px 12px rgba(230, 185, 24, 0.4);
+}
+
+/* Tab Content */
+.tab-content {
+    max-width: 1100px;
     margin: 0 auto;
-    max-width: 1200px;
     padding: 0 1rem;
 }
 
-.timeline {
-    background: #e6b918;
-    padding: 1.875rem;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    margin: 0 auto;
-}
-.timeline_heading {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: center;
-    color: #333;
-}
-.timeline_item {
-    position: relative;
-    padding-left: 3.125rem;
-    padding-bottom: 3.125rem;
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 4vw, 3rem);
 }
 
-.timeline_item:last-child {
+.content-item {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.5rem, 1.5vw, 0.75rem);
+    padding-bottom: clamp(1.5rem, 4vw, 2.5rem);
+    border-bottom: 1px solid rgba(230, 185, 24, 0.3);
+}
+
+.content-item:last-child {
+    border-bottom: none;
     padding-bottom: 0;
 }
 
-.timeline_icon {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.timeline_date {
-    font-size: 0.875rem;
+.content-year {
+    font-size: 0.95rem;
     font-weight: 600;
-    color: #333;
+    color: #e6b918;
+    letter-spacing: 0.5px;
 }
 
-.timeline_title {
-    font-size: 1.25rem;
+.content-title {
+    font-size: 1.5rem;
     font-weight: 700;
-    color: #333;
+    color: #ffffff;
+    margin-top: 0.25rem;
 }
 
-.timeline_text {
-    font-size: 0.875rem;
-    color: #555;
-    line-height: 20px;
-}
-
-.icon-graduation {
-    background: url('src/Images/images.jpeg') no-repeat center center;
-    background-size: cover;
-}
-
-.icon-Briefcase {
-    background: url('src/Images/Briefcase.jpg') no-repeat center center;
-    background-size: cover;
+.content-desc {
+    font-size: 1rem;
+    color: #cccccc;
+    line-height: 1.7;
+    margin-top: 0.5rem;
 }
 
 /* Media Queries */
-
-/* For tablets and small desktops */
 @media (max-width: 1024px) {
     .experience-container {
-        margin: 8rem 1rem;
-    }
-
-
-    .timeline {
-        width: 100%;
-    }
-
-    .timeline_icon {
-        width: 35px;
-        height: 35px;
+        margin: clamp(4rem, 8vw, 8rem) 1rem;
     }
 
     .experience-container h2 {
-        font-size: 1.8rem;
-        margin-bottom: 3rem;
+        font-size: clamp(1.4rem, 3vw, 1.8rem);
+    }
+
+    .tab-button {
+        font-size: clamp(0.9rem, 2vw, 1rem);
+        padding: clamp(0.65rem, 1.5vw, 0.75rem) clamp(1rem, 3vw, 1.5rem);
+        min-width: clamp(120px, 20vw, 160px);
+    }
+
+    .content-title {
+        font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    }
+
+    .content-desc {
+        font-size: clamp(0.85rem, 2vw, 0.95rem);
     }
 }
 
-/* For mobile devices */
 @media (max-width: 768px) {
     .experience-container {
-        margin: 6rem 1rem;
+        margin: clamp(3rem, 6vw, 6rem) 1rem;
     }
-    .experience_container {
-        grid-template-columns: 1fr;
-    }
+
     .experience-container h2 {
-        font-size: 1.6rem;
-        margin-bottom: 2.5rem;
+        font-size: clamp(1.3rem, 3vw, 1.6rem);
     }
 
-    .timeline_item {
-        padding-left: 2.5rem;
+    .tab-button {
+        font-size: clamp(0.85rem, 2vw, 0.95rem);
+        padding: clamp(0.6rem, 1.5vw, 0.7rem) clamp(0.9rem, 2.5vw, 1.25rem);
+        min-width: clamp(100px, 18vw, 140px);
     }
 
-    .timeline_icon {
-        width: 30px;
-        height: 30px;
+    .content-title {
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
     }
 
-    .timeline_text, .timeline_date, .timeline_title {
-        font-size: 0.9rem;
+    .content-desc {
+        font-size: clamp(0.8rem, 2vw, 0.9rem);
     }
 }
 
-/* For small mobile devices */
 @media (max-width: 480px) {
     .experience-container {
-        margin: 4rem 0.5rem;
+        margin: clamp(2rem, 4vw, 4rem) 0.5rem;
     }
 
     .experience-container h2 {
-        font-size: 1.4rem;
+        font-size: clamp(1.2rem, 3vw, 1.4rem);
     }
 
-    .timeline_item {
-        padding-left: 2rem;
+    .tabs-container {
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    .timeline_icon {
-        width: 25px;
-        height: 25px;
+    .tab-button {
+        width: 100%;
+        min-width: unset;
+        font-size: clamp(0.8rem, 2vw, 0.9rem);
+        padding: clamp(0.55rem, 1.5vw, 0.65rem) 1rem;
     }
 
-    .timeline_text, .timeline_date, .timeline_title {
-        font-size: 0.8rem;
+    .content-title {
+        font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    }
+
+    .content-desc {
+        font-size: clamp(0.75rem, 2vw, 0.85rem);
     }
 }
